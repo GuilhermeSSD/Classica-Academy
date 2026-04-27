@@ -21,6 +21,12 @@ body{
 
 }
 
+a{
+    text-decoration: none;
+    color: var(--cor-destaque);
+
+}
+
 header{
     height: 10vh;
     width: 100%;
@@ -61,9 +67,8 @@ header{
     text-decoration: underline;
 
 }
-/*----------------------------------------------------*/
 /*----------------------------------------------------
-  CONTEINER FUNDO (mantido, apenas limpo)
+  CONTEINER FUNDO
 ----------------------------------------------------*/
 
 .conteiner-fundo {
@@ -320,70 +325,3 @@ header{
 }
 
 /*------------------------------------------------*/
-
-/*MINHA TRAGETORIA*/
-
-#titulo_tragetoria{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-bottom: 15px;
-    color: #fff;
-    font-size: 3.5em;
-}
-
-/*linha do--------------------------------------------*/
-.conteiner_trajetoria {
-    background-color: #1a0f08;
-    padding: 100px 5%;
-}   
-
-.trajetoria-container {
-    display: flex;
-    gap: 60px;
-    align-items: flex-start;
-    justify-content: center;
-}
-
-/* FOTO */
-.trajetoria-foto {
-    width: 35%;
-}
-
-/* LINHA DO TEMPO */
-.trajetoria-linha {
-    width: 65%;
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-}
-
-
-
-
-.marco {
-    background-color: #2a1a12;
-    border-left: 4px solid #c9933f;
-    padding: 20px 25px;
-    border-radius: 12px;
-}
-
-.marco .ano {
-    color: #c9933f;
-    font-weight: bold;
-    font-size: 0.9em;
-}
-
-.marco h3 {
-    margin: 5px 0 10px 0;
-    color: #fff;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.marco p {
-    color: #faf4d3;
-    line-height: 1.5;
-}
-
-/* TÍTULO */
-#titulo_tragetoria span {
-    color: #c9933f;
-}

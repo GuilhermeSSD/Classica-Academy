@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_home.css">
 </head>
 <body>
     <header>
@@ -12,10 +12,10 @@
             <h2>Clássica Academy</h2>
         </div>
         <div class="nav">
-            <button>início</button>
-            <button>Fundamentos</button>
-            <button>instrumentos</button>
-            <button><a href="tragetoria.html"> sobre mim</a></button>
+            <button><a href="#introducao">Início</a></button>
+            <button><a href="#conteiner_introducao">Fundamentos</a></button>
+            <button><a href="#conteiner_instrumentos">Instrumentos</a></button>
+            <button><a href="trajetoria.html">Sobre mim</a></button>
             
         </div>
     </header>
@@ -32,12 +32,12 @@
                     sensibilidade e compreensão musical desde os primeiros passos.
                 </p>
 
-                <button id="comecar">Comece sua jornada</button>
+                <button id="comecar" onclick="comecar()">Comece sua jornada</button>
             </div>
         </div>
     </section>
 
-    <section id="conteiner_introducao">
+    <section id="conteiner_introducao" id="fundamentos">
         <div id="content_introducao">
 
             <div class="testo">
@@ -130,5 +130,7 @@
     </section>
 
     <footer></footer>
+
+    <script src="app/script.js"></script>
 </body>
 </html>

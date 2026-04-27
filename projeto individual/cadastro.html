@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cadastro</title>
+    <link rel="stylesheet" href="style_cad_log.css" />
+  </head>
+  <body>
+    <main class="page">
+    <header>
+        <div class="nomesite">
+            <h2>Clássica Academy</h2>
+        </div>
+        <div class="nav">
+            <button><a href="index.html">Início</a></button>
+            <button><a href="index.html">Fundamentos</a></button>
+            <button><a href="index.html">Instrumentos</a></button>
+            <button><a href="#">Sobre mim</a></button>
+            
+        </div>
+    </header>
+
+        <section class="card">
+          <div class="forms">
+          <form id="register-form" class="form">
+            <h2>Cadastro</h2>
+          
+            <input
+              type="text"
+              name="register-name"
+              id="register-name"
+              placeholder="Usuario:"
+              autocomplete="username"
+              required
+            />
+
+            <input
+              type="email"
+              name="register-email"
+              id="register-email"
+              placeholder="Email:"
+              autocomplete="email"
+              required
+            />
+
+           
+            <input
+              type="password"
+              name="register-pass"
+              id="register-pass"
+              placeholder="Senha:"
+              autocomplete="new-password"
+              required
+            />
+
+            <input
+              type="password"
+              name="register-pass"
+              id="register-pass"
+              placeholder="Confirmar senha:"
+              autocomplete="new-password"
+              required
+            />
+
+
+            <button type="submit" id="register-button">Criar conta</button>
+            <p class="msg" id="register-msg" role="status"></p>
+          </form>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <script src="app/script.js"></script>
+  </body>
+</html>
