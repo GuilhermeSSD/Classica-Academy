@@ -46,57 +46,82 @@ header{
 
 .nav > button{
     color: #c9933f;
+    background-color: var(--cor-primaria);
+    border: none;
+    margin: 5px;
+    font-size: medium;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
     
 }
-/*----------------------------------------------------*/
-.conteiner-fundo{
-    background-color: rgb(37, 37, 37);
-    height: 100vh;
-    color: rgb(0, 0, 0);
-    box-shadow: inset 6px 6px 13px 0px rgb(53, 53, 53);
-    background-size: cover;
-    background-attachment: fixed;
+
+.nav > button:hover{
+    transform: 1s;
+    cursor: pointer;
+    text-decoration: underline;
 
 }
+/*----------------------------------------------------*/
+/*----------------------------------------------------
+  CONTEINER FUNDO (mantido, apenas limpo)
+----------------------------------------------------*/
 
-#intruducao{
-    background-image: url(img/fundo-01.jpg); 
+.conteiner-fundo {
+    background-color: rgb(37, 37, 37);
+    height: 100vh;
+    box-shadow: inset 6px 6px 13px rgb(53, 53, 53);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*----------------------------------------------------
+  INTRODUÇÃO
+----------------------------------------------------*/
+
+#introducao {
+    background-image: url(img/fundo-01.jpg);
     background-position: right center;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#alinhador{
-    background-color: rgba(1, 0, 0, 0.822);
+#alinhador {
+    background-color: rgba(0, 0, 0, 0.75);
     display: flex;
     width: 100%;
     height: 100%;
     justify-content: center;
 }
 
-.texto_introcucao{
+.texto_introducao {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     width: 40%;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 140%;
-    color: #faf4d3;
-
 }
 
-#titulo_inicial{
+#titulo_inicial {
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-bottom: 15px;
     color: #fff;
-    
+    font-size: 2.5em;
 }
 
-#comecar{
-    background-color: #c9933f;
+.texto_introducao > p {
+    font-size: 140%;
+    color: var(--cor-texto-claro);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*----------------------------------------------------
+  BOTÃO
+----------------------------------------------------*/
+
+#comecar {
+    background-color: var(--cor-destaque);
     padding: 10px;
     border-radius: 10px;
     border: none;
@@ -104,7 +129,11 @@ header{
     height: 50px;
     width: 200px;
     font-size: 0.8em;
-    
+    cursor: pointer;
+}
+
+#comecar:hover {
+    opacity: 0.9;
 }
 
 /*------------------------------------------------------*/
@@ -178,7 +207,17 @@ header{
     width: 100%;
     height: 55%;
     margin-bottom: 30px;
-    border-radius: 15px;  
+    border-radius: 15px 15px 0px 0px;  
+}
+
+#img_musica{
+    background-image: url(img/musica.jpg);
+}
+
+#img_som{
+    background-image: url(img/som.png);
+    background-size: cover;
+    background-position: right center;
 }
 
 .resumos_small{
@@ -189,7 +228,6 @@ header{
     height: 25vh;
     width: 100%;
     flex-wrap: wrap;
-
 }
 
 #pq{
@@ -204,7 +242,6 @@ header{
     margin-right: 30px;
     font-size: larger;
     color: #faf4d3;
-    
 }
 
 .texto_resumos > h3{
@@ -222,7 +259,6 @@ header{
     display: flex;
     align-items: center;
     flex-direction: column;
-
 }
 
 .instrumento{
@@ -248,12 +284,106 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     margin: 10px;
 }
 
-.destaques{
-    background-color: #413229;
-    
+.texto_instrumentos{
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: large;
+    color: #faf4d3;
+    text-align: justify;
+}
+
+.texto_instrumentos > h2{
+    color: aliceblue;
+}    
+
+
+.metodo_instrumento{
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    border:1px solid var(--cor-texto-claro);
+    background-color: var(--cor-secundaria);
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: medium;
+    color: #faf4d3;
+    text-align: justify;
+}
+
+.metodo_instrumento > h3{
+    color: aliceblue;
+    margin-bottom: 5px;
+}
+
+/*------------------------------------------------*/
+
+/*MINHA TRAGETORIA*/
+
+#titulo_tragetoria{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 15px;
+    color: #fff;
+    font-size: 3.5em;
+}
+
+/*linha do--------------------------------------------*/
+.conteiner_trajetoria {
+    background-color: #1a0f08;
+    padding: 100px 5%;
+}   
+
+.trajetoria-container {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+/* FOTO */
+.trajetoria-foto {
+    width: 35%;
+}
+
+/* LINHA DO TEMPO */
+.trajetoria-linha {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
 
 
+
+
+.marco {
+    background-color: #2a1a12;
+    border-left: 4px solid #c9933f;
+    padding: 20px 25px;
+    border-radius: 12px;
+}
+
+.marco .ano {
+    color: #c9933f;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.marco h3 {
+    margin: 5px 0 10px 0;
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.marco p {
+    color: #faf4d3;
+    line-height: 1.5;
+}
+
+/* TÍTULO */
+#titulo_tragetoria span {
+    color: #c9933f;
+}
