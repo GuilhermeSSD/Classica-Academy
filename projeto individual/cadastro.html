@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>cadastro</title>
-    <link rel="stylesheet" href="style_cad_log.css" />
+    <link rel="stylesheet" href="syles/header.css">
+    <link rel="stylesheet" href="syles/style_cad_log.css" />
   </head>
   <body>
     <main class="page">
@@ -14,22 +15,21 @@
         </div>
         <div class="nav">
             <button><a href="index.html">Início</a></button>
-            <button><a href="index.html">Fundamentos</a></button>
-            <button><a href="index.html">Instrumentos</a></button>
-            <button><a href="#">Sobre mim</a></button>
+            <button><a href="index.html#conteiner_introducao">Fundamentos</a></button>
+            <button><a href="index.html#conteiner_instrumentos">Instrumentos</a></button>
+            <button><a href="trajetoria.html">Sobre mim</a></button>
             
         </div>
     </header>
 
         <section class="card">
           <div class="forms">
-          <form id="register-form" class="form">
+          <form id="form_cad" class="form">
             <h2>Cadastro</h2>
           
             <input
               type="text"
-              name="register-name"
-              id="register-name"
+              id="imp_user"
               placeholder="Usuario:"
               autocomplete="username"
               required
@@ -37,8 +37,7 @@
 
             <input
               type="email"
-              name="register-email"
-              id="register-email"
+              id="imp_email"
               placeholder="Email:"
               autocomplete="email"
               required
@@ -47,8 +46,7 @@
            
             <input
               type="password"
-              name="register-pass"
-              id="register-pass"
+              id="imp_senha"
               placeholder="Senha:"
               autocomplete="new-password"
               required
@@ -56,15 +54,14 @@
 
             <input
               type="password"
-              name="register-pass"
-              id="register-pass"
+              id="imp_senhacorfirm"
               placeholder="Confirmar senha:"
               autocomplete="new-password"
               required
             />
 
 
-            <button type="submit" id="register-button">Criar conta</button>
+            <button type="submit" id="criar">Criar conta</button>
             <p class="msg" id="register-msg" role="status"></p>
           </form>
           </section>
@@ -72,6 +69,6 @@
       </section>
     </main>
 
-    <script src="app/script.js"></script>
+    <script src="app/cadastrar.js"></script>
   </body>
 </html>

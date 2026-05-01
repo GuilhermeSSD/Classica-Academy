@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style_home.css">
+    <link rel="stylesheet" href="syles/header.css">
+    <link rel="stylesheet" href="syles/style_home.css">
 </head>
 <body>
     <header>
@@ -26,13 +27,12 @@
                 <h1 id="titulo_inicial">
                     Domine os Fundamentos da Música Clássica
                 </h1>
-
                 <p>
                     Construa uma base sólida na música clássica, desenvolvendo técnica,
                     sensibilidade e compreensão musical desde os primeiros passos.
                 </p>
 
-                <button id="comecar" onclick="comecar()">Comece sua jornada</button>
+                <button id="comecar" onclick="comecar()">COMECE SUA JORNADA</button>
             </div>
         </div>
     </section>
@@ -68,14 +68,13 @@
                     </div>
                 </div>
             </div>
- 
+
 
             <div class="resumos_small">
                 <div class="resumos" id="pq">
                     <div class="texto_resumos">
                         <h3>Melodia</h3>
-                        <p>A melodia é definida como a produção ordenada de sons sucessivos (um após o outro),
-                         formando assim um sentido musical.
+                        <p>A melodia é definida como a produção ordenada de sons sucessivos (um após o outro),formando assim um sentido musical.
                         </p>
                     </div>
                 </div>
@@ -107,26 +106,29 @@
         </div>
 
 
-        <section id="violino" class="instrumento">
-            <div class="img_instrumento" id="fotovio"></div>
-            <div class="conteudo_instrumento">
-                <div class="texto_instrumentos">
-               <h2>Violino</h3>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit distinctio nihil aliquam quod! Expedita vitae praesentium aliquid officiis ab adipisci doloribus, numquam rem quod repudiandae earum illum sunt fugiat blanditiis.</p>
-               </div>
-               <div class="metodo_instrumento">
-                <h3>Metodoligia: ShmoolCCb/MSA</h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto voluptatibus eveniet aperiam libero odio tenetur sapiente ducimus consectetur, doloribus laborum consequatur soluta veritatis at autem omnis magnam suscipit, nesciunt ipsam?</p>
-               </div>
-               <button id="comecar">COMEÇAR AGORA!!!</button>
+        <div id="card_violino_container">
+
+    <button class="btn-lateral btn-esquerda" onclick="voutar()">‹</button>
+
+    <div id="card_violino" class="instrumento">
+        <div class="img_instrumento" id="foto_instrumento"></div>
+        <div class="conteudo_instrumento">
+            <div class="texto_instrumentos">
+
+                <h2 id="titulo_instrumento">Violino</h2>
+                <p id="sobre_intrumento">Conhecido por seu alcance expressivo e profundidade emocional, o violino tem sido a peça central de música clássica por séculos. De Bach e Beethoven, mestres compositores escreveram peças atemporais para este elegante instrumento.</p>
             </div>
-        </section>
-        <!--
-        <section id="flauta" class="instrumento">
-            <div class="img_instrumento" id="fotoflauta"></div>
-            <div class="conteudo_instrumento"></div>
-        </section>
-        -->
+            <div class="metodo_instrumento">
+                <h3 id="nome_metodo">Metodologia: ShmoolCCb/MSA</h3>
+                <p id="descricao_metodo">O Método Schmoll é um método didático tradicional para o estudo do violino, muito utilizado no ensino inicial do instrumento, inclusive no Brasil. Ele aparece principalmente no livro Método Schmoll para Violino, atribuído a Paul Schmoll, e tem como objetivo construir uma base técnica sólida antes de avançar para repertório mais complexo. </p>
+            </div>
+            <button id="comecar" onclick="irlicao()">COMEÇAR AGORA!!!</button>
+        </div>
+    </div>
+
+    <button class="btn-lateral btn-direita"  onclick="avancar()">›</button>
+
+</div>
     </section>
 
     <footer></footer>

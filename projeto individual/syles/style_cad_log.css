@@ -8,12 +8,6 @@
 --cor-instrumentos: #413229;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   line-height: 1.6;
   font-family: Arial, sans-serif;
@@ -21,53 +15,6 @@ body {
   min-height: 100vh;
 }
 
-
-header{
-    height: 10vh;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: var(--cor-primaria); 
-    align-items: center;
-    border-bottom: 1px solid #6c544a;
-    position: fixed;
-}
-
-a{
-    text-decoration: none;
-    color: var(--cor-destaque);
-
-}
-
-.nomesite{
-    display: flex;
-    flex-direction: row;
-    color: white;
-    margin-left: 30px;
-}
-
-.nav{
-    margin: 30px;
-}
-
-.nav > button{
-    color: #c9933f;
-    background-color: var(--cor-primaria);
-    border: none;
-    margin: 5px;
-    font-size: medium;
-    padding: 5px 10px 5px 10px;
-    border-radius: 10px;
-    
-}
-
-.nav > button:hover{
-    transform: 1s;
-    cursor: pointer;
-    text-decoration: underline;
-
-}
 .card {
   height: 90vh;
   display: flex;

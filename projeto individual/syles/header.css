@@ -1,0 +1,71 @@
+:root {
+    --cor-fundo-geral: rgba(206, 205, 205, 0.704);
+    --cor-primaria: #1a0f08;
+    --cor-secundaria: #4d3e37;
+    --cor-destaque: #c9933f;
+    --cor-texto-claro: #faf4d3;
+    --cor-preto: #000;
+    --cor-instrumentos: #413229;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--cor-primaria);
+    color: #faf4d3;
+    font-family: Arial, sans-serif;
+
+}
+
+a{
+    text-decoration: none;
+    color: var(--cor-destaque);
+
+}
+
+header{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--cor-primaria); 
+    align-items: center;
+    border-bottom: 1px solid #6c544a;
+    position: fixed;
+    z-index: 10;
+    
+}
+
+.nomesite{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    margin-left: 30px;
+}
+
+.nav{
+    margin: 30px;
+}
+
+.nav > button{
+    color: #c9933f;
+    background-color: var(--cor-primaria);
+    border: none;
+    margin: 5px;
+    font-size: medium;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    
+}
+
+.nav > button:hover{
+    transform: 1s;
+    cursor: pointer;
+    text-decoration: underline;
+
+}

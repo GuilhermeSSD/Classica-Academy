@@ -1,0 +1,83 @@
+:root {
+--cor-fundo-geral: rgba(206, 205, 205, 0.704);
+--cor-primaria: #1a0f08;
+--cor-secundaria: #4d3e37;
+--cor-destaque: #c9933f;
+--cor-texto-claro: #faf4d3;
+--cor-preto: #000;
+--cor-instrumentos: #413229;
+}
+
+/* TOPO */
+.topo{
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(#2b1d14, #1c140f);
+}
+
+.topo h1{
+    font-size: 2.5em;
+    color: #d6a14a;
+}
+
+.topo p{
+    margin-top: 10px;
+    font-size: 1.1em;
+}
+
+/* CONTEÚDO */
+.curso{
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.modulo{
+    margin-bottom: 40px;
+}
+
+.modulo h2{
+    color: #d6a14a;
+    margin-bottom: 10px;
+}
+
+.modulo p{
+    text-align: justify;
+}
+
+/* DESTAQUE DO INSTRUMENTO */
+.destaque{
+    background-color: #2b1d14;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+/* BLOCO DO VIOLINO */
+.instrumento{
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.img_instrumento{
+    width: 250px;
+    height: 350px;
+    background-image: url("img/viola.jpg"); /* pode trocar depois */
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.texto_instrumento{
+    flex: 1;
+    text-align: justify;
+}
+
+/* RODAPÉ */
+.rodape{
+    text-align: center;
+    padding: 20px;
+    background-color: #140d09;
+    font-size: 0.9em;
+}

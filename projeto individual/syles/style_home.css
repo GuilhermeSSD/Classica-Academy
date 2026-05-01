@@ -1,75 +1,12 @@
 :root {
-   
-    --cor-fundo-geral: rgba(206, 205, 205, 0.704);
-    --cor-primaria: #1a0f08;
-    --cor-secundaria: #4d3e37;
-    --cor-destaque: #c9933f;
-    --cor-texto-claro: #faf4d3;
-    --cor-preto: #000;
-    --cor-instrumentos: #413229;
+--cor-fundo-geral: rgba(206, 205, 205, 0.704);
+--cor-primaria: #1a0f08;
+--cor-secundaria: #4d3e37;
+--cor-destaque: #c9933f;
+--cor-texto-claro: #faf4d3;
+--cor-preto: #000;
+--cor-instrumentos: #413229;
 }
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body{
-    background-color: rgba(206, 205, 205, 0.704);
-    color: #faf4d3;
-
-}
-
-a{
-    text-decoration: none;
-    color: var(--cor-destaque);
-
-}
-
-header{
-    height: 10vh;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: var(--cor-primaria); 
-    align-items: center;
-    border-bottom: 1px solid #6c544a;
-    position: fixed;
-}
-
-.nomesite{
-    display: flex;
-    flex-direction: row;
-    color: white;
-    margin-left: 30px;
-}
-
-.nav{
-    margin: 30px;
-}
-
-.nav > button{
-    color: #c9933f;
-    background-color: var(--cor-primaria);
-    border: none;
-    margin: 5px;
-    font-size: medium;
-    padding: 5px 10px 5px 10px;
-    border-radius: 10px;
-    
-}
-
-.nav > button:hover{
-    transform: 1s;
-    cursor: pointer;
-    text-decoration: underline;
-
-}
-/*----------------------------------------------------
-  CONTEINER FUNDO
-----------------------------------------------------*/
 
 .conteiner-fundo {
     background-color: rgb(37, 37, 37);
@@ -79,12 +16,8 @@ header{
     background-attachment: fixed;
 }
 
-/*----------------------------------------------------
-  INTRODUÇÃO
-----------------------------------------------------*/
-
 #introducao {
-    background-image: url(img/fundo-01.jpg);
+    background-image: url(../img/fundo-01.jpg);
     background-position: right center;
     display: flex;
     align-items: center;
@@ -120,10 +53,6 @@ header{
     color: var(--cor-texto-claro);
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
-/*----------------------------------------------------
-  BOTÃO
-----------------------------------------------------*/
 
 #comecar {
     background-color: var(--cor-destaque);
@@ -184,7 +113,6 @@ header{
 }
 
 .resumos{
-  
     background-color: var(--cor-secundaria);
     border: 1px solid black;
     text-align: justify;
@@ -216,11 +144,11 @@ header{
 }
 
 #img_musica{
-    background-image: url(img/musica.jpg);
+    background-image: url(../img/musica.jpg);
 }
 
 #img_som{
-    background-image: url(img/som.png);
+    background-image: url(../img/som.png);
     background-size: cover;
     background-position: right center;
 }
@@ -258,7 +186,7 @@ header{
     height: 130vh;
     width: 100%;
     padding: 10px;  
-    padding-top: 25;
+    padding-top: 25px;
     text-align: center;
     background-color: var(--cor-instrumentos); 
     display: flex;
@@ -275,9 +203,9 @@ header{
     border-radius: 25px;
 }
 
-.img_instrumento{
+#foto_instrumento{
     background-color: #565352;
-    background-image: url(https://solardorosario.com.br/wp-content/uploads/2021/05/41094f5c9b806b4d871eae90d50523e7.jpg);
+    background-image: url(../img/violino.jpg);
     background-size: cover;
     width: 100%;
     height: 100%;
@@ -322,6 +250,37 @@ header{
 .metodo_instrumento > h3{
     color: aliceblue;
     margin-bottom: 5px;
+}
+
+#card_violino_container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95vh; 
+}
+
+.btn-lateral {
+    position: absolute;
+    background-color: var(--cor-destaque);
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.btn-esquerda {
+    left: -60px;
+}
+
+.btn-direita {
+    right: -60px;
+}
+
+.btn-lateral:hover {
+    opacity: 0.85;
 }
 
 /*------------------------------------------------*/
