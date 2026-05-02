@@ -1,7 +1,6 @@
 function comecar(){
-    window.location.href = "Login.html";
+    window.location.href = "/login.html";
 }
-
 
 
 const instrumentos = [

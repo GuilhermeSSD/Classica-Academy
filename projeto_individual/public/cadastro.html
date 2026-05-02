@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cadastro</title>
+    <link rel="stylesheet" href="syles/style_cad_log.css" />
+  </head>
+
+
+  <body onload="listar()">
+  
+    <header>
+        <div class="nomesite">
+            <h2>Clássica Academy</h2>
+        </div>
+        <div class="nav">
+            <button><a href="index.html">Início</a></button>
+            <button><a href="index.html#conteiner_introducao">Fundamentos</a></button>
+            <button><a href="index.html#conteiner_instrumentos">Instrumentos</a></button>
+            <button><a href="trajetoria.html">Sobre mim</a></button>
+            
+        </div>
+    </header>
+
+  <div class="alerta_erro">
+    <div class="card_erro" id="cardErro">
+      <span id="fechar" onclick="sumirMensagem()">&times;</span>
+      <span id="mensagem_erro"></span>
+    </div>
+  </div>
+
+  <section class="card"> 
+    <div class="forms">
+      <form id="login-form" class="form"> 
+        <h2>Cadastre-se aqui!</h2>
+        <input type="text" id="imp_user" placeholder="Nome Completo">
+        <input type="email" id="imp_email" placeholder="Email">
+        <input type="password" id="imp_senha" placeholder="Senha">
+        <input type="password" id="imp_senhaconfirm" placeholder="Confirmar Senha">
+        <select id="selecao_do_instrumento">
+          <option value="">Escolha um instrumento</option>
+          <option value="1">Violino</option>
+          <option value="2">Viola</option>
+          <option value="3">Violoncelo</option>
+        </select>
+
+        <button type="button" onclick="cadastrar()">Cadastrar</button>
+      </form>
+        <p class="com-cadastro">Já possuo conta!  <a href="login.html">Fazer Login</a></p>
+    </div>
+  </section>
+</body>
+
+</html>
+<script src="../app/cadastrar.js"></script>
+</html>
