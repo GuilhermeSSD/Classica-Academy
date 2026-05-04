@@ -17,12 +17,14 @@ function autenticar(req, res) {
                 function (resultadoAutenticar) {
                     console.log(`\nResultados encontrados: ${resultadoAutenticar.length}`);
                     console.log(`Resultados: ${JSON.stringify(resultadoAutenticar)}`); // transforma JSON em String
-                    if (resultadoAutenticar.length == 0) {
-                                    res.status(403).send("Email e/ou senha inválido(s)");
-                                } else {
-                                    res.status(403).send("Mais de um usuário com o mesmo login e senha!");
-                                }
-                            }
+                    if (resultadoAutenticar.length == 1) {
+                    res.status(200).json(resultadoAutenticar[0]);
+                    }else if (resultadoAutenticar.length == 0) {
+                        res.status(403).send("Email e/ou senha inválido(s)");
+                    } 
+
+                    
+                }
             ).catch(
                 function (erro) {
                     console.log(erro);
@@ -55,7 +57,7 @@ function cadastrar(req, res) {
     usuarioModel.cadastrar(nome, email, senha)
     .then(function (resultado) {
         const idUsuario = resultado.insertId;
-        return usuarioModel.vincularInstrumento(idUsuario, fkinstrumento);
+        return usuarioModel.vincularInstrumento(idUsuario, fkinstrumento);  
     })
     .then(function () {
         res.json("Cadastro realizado com sucesso!");
