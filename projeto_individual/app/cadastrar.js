@@ -2,31 +2,23 @@
 
 let listainstrumentoCadastradas = [];
 
-    function cadastrar() {
-    // aguardar();
-    //Recupere o valor da nova input pelo nome do id
-    // Agora vá para o método fetch logo abaixo
+    function salvarMetade(){
     let nomeVar = imp_user.value;
     let emailVar = imp_email.value;
     let senhaVar = imp_senha.value;
     let confirmacaoSenhaVar = imp_senhaconfirm.value;
-    let instrumentoVar = selecao_do_instrumento.value;
 
-
-
-    // Verificando se há algum campo em branco
+    //Verifica se todos os campos estão em brancos
     if (
     nomeVar == "" ||
     emailVar == "" ||
     senhaVar == "" ||
-    confirmacaoSenhaVar == "" ||
-    instrumentoVar == ""
+    confirmacaoSenhaVar == ""
     ) {
     cardErro.style.display = "block";
     cardErro.style.background = "linear-gradient(135deg, #dc2626, #b91c1c)";
 
-    mensagem_erro.innerHTML =
-        "(Mensagem de erro para todos os campos em branco)";
+    mensagem_erro.innerHTML ="(Mensagem de erro para todos os campos em branco)";
 
     finalizarAguardar();
     return false;
@@ -35,8 +27,7 @@ let listainstrumentoCadastradas = [];
     } else if (nomeVar.length <= 1) {
     cardErro.style.display = "block";
     cardErro.style.background = "linear-gradient(135deg, #dc2626, #b91c1c)";
-    mensagem_erro.innerHTML =
-        "(Nome com um ou menos caracteres)";
+    mensagem_erro.innerHTML ="(Nome com um ou menos caracteres)";
     finalizarAguardar();
     return false;
 
@@ -44,8 +35,7 @@ let listainstrumentoCadastradas = [];
     } else if (emailVar.indexOf('@') == -1) {
     cardErro.style.display = "block";
     cardErro.style.background = "linear-gradient(135deg, #dc2626, #b91c1c)";
-    mensagem_erro.innerHTML =
-        "(Não contém arroba)";
+    mensagem_erro.innerHTML ="(Não contém arroba)";
     finalizarAguardar();
     return false;
 
@@ -61,8 +51,7 @@ let listainstrumentoCadastradas = [];
     } else if (senhaVar.length <= 6) {
     cardErro.style.display = "block";
     cardErro.style.background = "linear-gradient(135deg, #dc2626, #b91c1c)";
-    mensagem_erro.innerHTML =
-    "(Senha com 6 ou menos digitos)";
+    mensagem_erro.innerHTML ="(Senha com 6 ou menos digitos)";
     finalizarAguardar();
     return false;
 
@@ -70,17 +59,59 @@ let listainstrumentoCadastradas = [];
     } else if (senhaVar != confirmacaoSenhaVar) {
     cardErro.style.display = "block";
     cardErro.style.background = "linear-gradient(135deg, #dc2626, #b91c1c)";
-    mensagem_erro.innerHTML =
-        "(Não é igual a senha)";
+    mensagem_erro.innerHTML ="(Não é igual a senha)";
     finalizarAguardar();
-    return false;
+    return false;}
+    else{
 
-    } else {
-      // fecha em 5 segundos se não tiver erros
-    setTimeout(sumirMensagem, 5000);
+        sessionStorage.setItem("userTemp", imp_user.value);
+        sessionStorage.setItem("emailTemp", imp_email.value);
+        sessionStorage.setItem("senhaTemp", imp_senha.value);
+        sessionStorage.setItem("senhaConfirmTemp", imp_senhaconfirm.value);
+
+        cardErro.style.display = "block";
+        cardErro.style.background = "linear-gradient(135deg, #26dc35, #538f09)";
+        mensagem_erro.innerHTML ="Salvando alterações! redirecionando para instrumentos...";
+
+        setTimeout(function () {
+        primeira_parte.style.display = "none"
+        segunda_parte.style.display = "flex"
+                    }, 900);
+        
     }
+}
 
 
+
+    function cadastrar(){
+    let listaInstrumentosMarcadas = [];
+
+    let violino = document.getElementById("inp_violino");
+    let viola = document.getElementById("inp_Viola");
+    let violoncelo = document.getElementById("inp_Violoncelo");
+    // aguardar();
+    //Recupere o valor da nova input pelo nome do id
+    // Agora vá para o método fetch logo abaixo
+
+
+    if (violino.checked) {
+    listaInstrumentosMarcadas.push("1");
+} 
+    if (viola.checked) {
+    listaInstrumentosMarcadas.push("2");
+} 
+    if (violoncelo.checked) {
+    listaInstrumentosMarcadas.push("3");
+} 
+
+
+    let nomeVar = sessionStorage.getItem("userTemp");
+    let emailVar = sessionStorage.getItem("emailTemp");
+    let senhaVar = sessionStorage.getItem("senhaTemp");
+    let instrumentoVar = listaInstrumentosMarcadas;
+
+    
+    
     // Enviando o valor da nova input
     fetch("/usuarios/cadastrar", {
     method: "POST",
@@ -93,14 +124,21 @@ let listainstrumentoCadastradas = [];
         nomeServer: nomeVar,
         emailServer: emailVar,
         senhaServer: senhaVar,
-        instrumentoServer: instrumentoVar,
+        listasinstrumentoServer: instrumentoVar,
 
     }),
     })
     .then(function (resposta) {
         console.log("resposta: ", resposta);
 
+        // exibir 2a parte do formulário
+        // ao cadastrar a conta, já seleciona os instrumentos e usa o ID cadastrado na conta, para vincular TODOS os instrumentos
+
         if (resposta.ok) {
+        sessionStorage.removeItem("userTemp");
+        sessionStorage.removeItem("emailTemp");
+        sessionStorage.removeItem("senhaTemp");
+
         cardErro.style.display = "block";
         cardErro.style.background = "linear-gradient(135deg, #26dc35, #538f09)";
         mensagem_erro.innerHTML =

@@ -30,28 +30,54 @@
     </div>
   </div>
 
-  <section class="card"> 
+  <section class="card" id="primeira_parte"> 
     <div class="forms">
-      <form id="login-form" class="form"> 
+      <form class="form"> 
         <h2>Cadastre-se aqui!</h2>
         <input type="text" id="imp_user" placeholder="Nome Completo">
         <input type="email" id="imp_email" placeholder="Email">
         <input type="password" id="imp_senha" placeholder="Senha">
         <input type="password" id="imp_senhaconfirm" placeholder="Confirmar Senha">
-        <select id="selecao_do_instrumento">
-          <option value="">Escolha um instrumento</option>
-          <option value="1">Violino</option>
-          <option value="2">Viola</option>
-          <option value="3">Violoncelo</option>
-        </select>
 
-        <button type="button" onclick="cadastrar()">Cadastrar</button>
+        <button type="button" onclick="salvarMetade()">Ir para a seleção de Instrumentos</button>
       </form>
         <p class="com-cadastro">Já possuo conta!  <a href="login.html">Fazer Login</a></p>
     </div>
   </section>
+
+
+  <section class="card" id="segunda_parte"> 
+      <div class="forms">
+          <form class="form"> 
+          <h2>Cadastre os seus instrumetos aqui!</h2>
+
+          <span class="linha_dos_checks">
+              <input type="checkbox" value="1" id="inp_violino">
+              <label for="inp_violino">Violino</label>
+          </span>
+          <br>
+
+          <span class="linha_dos_checks">
+              <input type="checkbox" value="2" id="inp_Viola">
+              <label for="inp_viola">Viola</label>
+          </span>
+          <br>
+
+          <span class="linha_dos_checks">
+              <input type="checkbox" value="3" id="inp_Violoncelo">
+              <label for="inp_Violoncelo">Violoncelo</label>
+          </span>
+
+          
+          <button type="button" onclick="cadastrar()">Cadastrar</button>
+          </form>
+          <p class="com-cadastro">Já possuo conta!  <a href="login.html">Fazer Login</a></p>
+      </div>
+  </section>
+
+
 </body>
 
 </html>
 <script src="../app/cadastrar.js"></script>
-</html>
+

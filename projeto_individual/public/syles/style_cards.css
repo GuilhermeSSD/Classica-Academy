@@ -1,0 +1,43 @@
+:root {
+    --cor-fundo-geral: rgba(206, 205, 205, 0.704);
+    --cor-primaria: #1a0f08;
+    --cor-secundaria: #4d3e37;
+    --cor-destaque: #c9933f;
+    --cor-texto-claro: #faf4d3;
+    --cor-preto: #000;
+    --cor-instrumentos: #413229;
+}
+
+#conteiner_cards{
+    height: 100vh;
+    padding: 10px;  
+    padding-top: 25px;
+    background-color: var(--cor-primaria); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+#content_cards{
+    height: 50vh;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: stretch;
+    padding-top: 15px;
+    flex-wrap: wrap;
+}
+
+.cartao_acesso{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--cor-secundaria);
+    border: 1px solid var(--cor-destaque);
+    padding: 20px;
+    border-radius:20px;
+
+
+}

@@ -74,9 +74,18 @@ header{
 
 .card {
   height: 90vh;
-  display: flex;
   align-items: center;
   justify-content: center;
+  display: flex;
+}
+
+
+#primeira_parte{
+  display: flex;
+}
+
+#segunda_parte{
+  display: none;
 }
 
 .forms {
@@ -183,4 +192,34 @@ header{
 
     main {
     padding-top: 10vh;
+}
+
+.imp{
+  width: 100%;
+  height: 42px;
+  margin-bottom: 14px;
+  padding: 0 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.linha_dos_checks{
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+#inp_violino{
+  width: 50px;
+}
+
+#inp_Violoncelo{
+  width: 50px;
+}
+
+
+#inp_Viola{
+  width: 50px;
 }

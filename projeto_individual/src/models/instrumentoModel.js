@@ -24,6 +24,16 @@ function vincularUsuario(idUsuario, idInstrumento) {
     return database.executar(instrucaoSql);
 }
 
+// parte mexida
+function acessoinstrumento(idUsuario) {
+    var instrucaoSql = `
+    SELECT fk_instrumento FROM usuario_instrumento WHERE fk_idusuario = ${idUsuario};
+    `;
+    return database.executar(instrucaoSql);
+}
+
+
+
 module.exports = {
     listar,
     cadastrar,

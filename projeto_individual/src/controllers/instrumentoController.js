@@ -14,8 +14,18 @@ function buscarPorId(req, res) {
   });
 }
 
+//parte mexida
+function listadeacessos(req,res){
+  var id = req.idusuario
+  
+  instrumentoModel.acessoinstrumento(id).then((resultado) => {
+    res.status(200).json(resultado);
+  });
+}
+
 
 module.exports = {
   buscarPorId,
   listar,
+  listadeacessos,
 };

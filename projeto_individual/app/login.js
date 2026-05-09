@@ -3,7 +3,6 @@ function ircad(){
 }
 
     function entrar() {
-
         var emailVar = imp_email.value;
         var senhaVar = imp_senha.value;
 
@@ -41,9 +40,13 @@ function ircad(){
                     sessionStorage.EMAIL_USUARIO = json.email;
                     sessionStorage.NOME_USUARIO = json.nome;
                     sessionStorage.ID_USUARIO = json.idusuario;
-                    
+                    cardErro.style.display = "block";
+                    cardErro.style.background = "linear-gradient(135deg, #00f519, #0b8c04)";
+                    mensagem_erro.innerHTML =
+                        "(carregando o curso disponiveis para o seu cadastro...)";
 
                     setTimeout(function () {
+
                         window.location = "/curso_violino.html";
                     }, 1000); // apenas para exibir o loading
 
@@ -52,6 +55,11 @@ function ircad(){
             } else {
 
                 console.log("Houve um erro ao tentar realizar o login!");
+                cardErro.style.display = "block";
+                cardErro.style.background = "linear-gradient(135deg, #dc2626, #b91c1c)";
+                mensagem_erro.innerHTML =
+                    "(Login falho)";
+
 
                 resposta.text().then(texto => {
                     console.error(texto);
