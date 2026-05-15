@@ -16,7 +16,7 @@ function buscarPorId(req, res) {
 
 //parte mexida
 function listadeacessos(req,res){
-  var id = req.idusuario
+  var id = req.params.idusuario
   
   instrumentoModel.acessoinstrumento(id).then((resultado) => {
     res.status(200).json(resultado);
@@ -27,5 +27,5 @@ function listadeacessos(req,res){
 module.exports = {
   buscarPorId,
   listar,
-  listadeacessos,
+  listadeacessos
 };

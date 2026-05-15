@@ -9,53 +9,52 @@
     </head>
 
 
-<body onload="listar()">
-
+<body onload="VerifCursos()">
     <header>
         <div class="nomesite">
             <h2>Clássica Academy</h2>
         </div>
         <div class="nav">
-            <button><a href="index.html">Início</a></button>
-            <button><a href="index.html#conteiner_introducao">Fundamentos</a></button>
-            <button><a href="index.html#conteiner_instrumentos">Instrumentos</a></button>
-            <button><a href="trajetoria.html">Sobre mim</a></button>
+            <button onclick="sair()">Sair</button>
+            <button><a href="#">DashBord</a></button>
             
         </div>
     </header>
 
 
     <section id="conteiner_cards">
+        <h1>Cursos que o seu login tem acesso</h1>
+        <br>
         <div id="content_cards">
-
             <div id="card_violino" class="cartao_acesso">
-                <h3>Curso de violino</h3>
-                <p id="acesso_vio">
-                    Você não tem acesso para esse curso;
+                <h2>Curso de violino</h2>
+                <p id="acesso_violino">
+                    Bem-vindo ao curso de Violino! Aqui você vai desenvolver técnica, afinação e musicalidade desde os fundamentos, construindo uma base sólida para uma interpretação expressiva e elegante.
                 </p>
-                <button onclick="">Acesse o curso aqui</button>
+                <button onclick="mudarpag(1)">Acesse o curso aqui</button>
             </div>
             <div id="card_viola" class="cartao_acesso">
-                <h3>Curso de viola</h3>
-                <p id="acesso_vio">
-                    Você não tem acesso para esse curso;
+                <h2>Curso de viola</h2>
+                <p id="acesso_viola">
+                    Bem-vindo ao curso de Violino! Aqui você vai desenvolver técnica, afinação e musicalidade desde os fundamentos, construindo uma base sólida para uma interpretação expressiva e elegante.
                 </p>
-                <button onclick="">Acesse o curso aqui</button>
+                <button onclick="mudarpag(2)">Acesse o curso aqui</button>
             </div>
             <div id="card_violoncelo" class="cartao_acesso">
-                <h3>Curso de Violoncelo</h3>
-                <p id="acesso_vio">
-                    Você não tem acesso para esse curso;
+
+                <h2>Curso de Violoncelo</h2>
+                <p id="acesso_violoncelo">
+                    Bem-vindo ao curso de Violoncelo! Explore a expressividade e a sonoridade marcante do instrumento, evoluindo passo a passo com foco em técnica, postura e musicalidade.
                 </p>
-                <button onclick="">Acesse o curso aqui</button>
+                <button onclick="mudarpag(3)">Acesse o curso aqui</button>
             </div>
 
         </div>
     </section>
 
 
-
+<script src="../app/cursos_disponiveis.js"></script>
+<script src="../app/paradeslogar.js"></script>
 </body>
 </html>
-<script src="../app/cadastrar.js"></script>
 

@@ -8,7 +8,7 @@ router.get("/buscar/:id", function (req, res) {
   instrumentoController.buscarPorId(req, res);
 });
 
-router.get("/listaracessos:idusuario", function (req, res) {
+router.get("/listaracessos/:idusuario", function (req, res) {
   instrumentoController.listadeacessos(req, res);
 });
 

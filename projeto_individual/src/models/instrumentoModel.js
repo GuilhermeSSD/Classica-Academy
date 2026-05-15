@@ -8,23 +8,7 @@ function listar() {
     return database.executar(instrucaoSql);
 }
 
-function cadastrar(nome) {
-    var instrucaoSql = `
-        INSERT INTO instrumento (nome)
-        VALUES ('${nome}');
-    `;
-    return database.executar(instrucaoSql);
-}
-
-function vincularUsuario(idUsuario, idInstrumento) {
-    var instrucaoSql = `
-        INSERT INTO usuario_instrumento (fk_idusuario, fk_instrumento)
-        VALUES (${idUsuario}, ${idInstrumento});
-    `;
-    return database.executar(instrucaoSql);
-}
-
-// parte mexida
+// verifica os ids dos instrumentos que o usuario tem acesso
 function acessoinstrumento(idUsuario) {
     var instrucaoSql = `
     SELECT fk_instrumento FROM usuario_instrumento WHERE fk_idusuario = ${idUsuario};
@@ -32,10 +16,7 @@ function acessoinstrumento(idUsuario) {
     return database.executar(instrucaoSql);
 }
 
-
-
 module.exports = {
     listar,
-    cadastrar,
-    vincularUsuario
+    acessoinstrumento
 };

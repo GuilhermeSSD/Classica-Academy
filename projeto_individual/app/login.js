@@ -47,7 +47,7 @@ function ircad(){
 
                     setTimeout(function () {
 
-                        window.location = "/curso_violino.html";
+                        window.location = "/cursos_disponiveis.html";
                     }, 1000); // apenas para exibir o loading
 
                 });
@@ -57,8 +57,7 @@ function ircad(){
                 console.log("Houve um erro ao tentar realizar o login!");
                 cardErro.style.display = "block";
                 cardErro.style.background = "linear-gradient(135deg, #dc2626, #b91c1c)";
-                mensagem_erro.innerHTML =
-                    "(Login falho)";
+                mensagem_erro.innerHTML ="(Login falho)";
 
 
                 resposta.text().then(texto => {

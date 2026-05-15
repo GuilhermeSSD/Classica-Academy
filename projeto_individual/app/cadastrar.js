@@ -63,7 +63,6 @@ let listainstrumentoCadastradas = [];
     finalizarAguardar();
     return false;}
     else{
-
         sessionStorage.setItem("userTemp", imp_user.value);
         sessionStorage.setItem("emailTemp", imp_email.value);
         sessionStorage.setItem("senhaTemp", imp_senha.value);
@@ -82,7 +81,6 @@ let listainstrumentoCadastradas = [];
 }
 
 
-
     function cadastrar(){
     let listaInstrumentosMarcadas = [];
 
@@ -93,7 +91,7 @@ let listainstrumentoCadastradas = [];
     //Recupere o valor da nova input pelo nome do id
     // Agora vá para o método fetch logo abaixo
 
-
+    // verifica quais instrumentos foi marcado pelo usuario
     if (violino.checked) {
     listaInstrumentosMarcadas.push("1");
 } 
@@ -131,7 +129,7 @@ let listainstrumentoCadastradas = [];
     .then(function (resposta) {
         console.log("resposta: ", resposta);
 
-        // exibir 2a parte do formulário
+        // exibir a parte 2 do formulário
         // ao cadastrar a conta, já seleciona os instrumentos e usa o ID cadastrado na conta, para vincular TODOS os instrumentos
 
         if (resposta.ok) {
@@ -139,6 +137,7 @@ let listainstrumentoCadastradas = [];
         sessionStorage.removeItem("emailTemp");
         sessionStorage.removeItem("senhaTemp");
 
+        //modal basico que informa que deu certo
         cardErro.style.display = "block";
         cardErro.style.background = "linear-gradient(135deg, #26dc35, #538f09)";
         mensagem_erro.innerHTML =
@@ -146,7 +145,7 @@ let listainstrumentoCadastradas = [];
 
         setTimeout(() => {
             window.location = "login.html";
-        }, "2000");
+        }, "1500");
 
         limparFormulario();
         finalizarAguardar();

@@ -23,7 +23,6 @@ function cadastrar(nome, email, senha) {
 
 
 function vincularInstrumento(idUsuario,Instumentos_selecionados) {
-
 var instrucaoSql = `
         INSERT INTO usuario_instrumento (fk_idusuario, fk_instrumento) VALUES`;
 
