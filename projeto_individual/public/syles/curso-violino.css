@@ -28,6 +28,13 @@
     justify-content:center;
 }
 
+#resultados{
+    width:100%;
+    display:none;
+    justify-content:center;
+}
+
+
 #pagina{
     background-color:antiquewhite;
     width:90%;
@@ -76,7 +83,7 @@
 #terminar,
 #btnSubmeter,
 #btnProx,
-#btnTentarNovamente{
+#btnVerResultado{
     padding:10px;
     border-radius:8px;
     background-color:var(--cor-destaque);

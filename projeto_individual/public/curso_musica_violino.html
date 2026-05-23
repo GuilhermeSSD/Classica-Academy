@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="syles/header.css">
     <link rel="stylesheet" href="syles/curso-violino.css">
 </head>
-<body>
+<body onload="paginacao(paginasTeoria)">
 
 <header>
     <div class="nomesite">
@@ -17,15 +17,14 @@
         <button><a href="#">Teoria musical</a></button>
         <button onclick="irCursoInstrmunto()"><a href="#">Teoria instrumental</a></button>
         <button onclick="irLicoes()"><a href="#">Lições</a></button>
-        <button><a href="#">Dashboard</a></button>
+        <button><a href="dashboard.html">Dashboard</a></button>
         <button onclick="sair()">Sair</button>
     </div>
 </header>
 
-<main class="conteudo_curso">
+<main class="conteudo_curso" >
 
     <section id="escrita">
-        <h3>Bem vindo ao curso de violino</h3>
 
         <section id="pagina">
             <h2 id="titulo_pagina">Figuras Musicais - 1</h2>
@@ -64,6 +63,7 @@
                 <span id="spanQuestaoExibida" class="text-bold"></span>
             </div>
 
+            
             <div id="infoAlternativas" class="padding-8">
                 <span><em>Escolha uma opção dentre as abaixo:</em></span>
             </div>
@@ -91,15 +91,27 @@
             <div id="botoes" class="flex-colunar padding-8">
                 <button onclick="submeter()" id="btnSubmeter">Submeter resposta</button>
                 <button onclick="avancar()" id="btnProx" disabled>Avançar para próxima questão</button>
-                <button onclick="tentarNovamente()" id="btnTentarNovamente" disabled>Tentar novamente</button>
+                <button onclick="mostrarResultados()" id="btnVerResultado" disabled>ver resultados</button>
             </div>
         </section>
     </section>
 
+
+<section id="resultados">
+    <section id="pagina">
+                <h2>Veja os seus resultados</h2>
+                <h3 id="textoParaMensagemFinal"></h3><br>
+                <h3 id="pontuacaoFinal"></h3><br>
+                <h3 id="acertos"></h3><br>
+                <h3 id="erros"></h3><br><br>
+                <h4 id="mensagemSucesso"></h4>
+                
+            </section>
+        </section>
+
 </main>
 
-<script src="../app/curso.js"></script>
+<script src="../app/dentro_cursos/curso_teoria_violino.js"></script>
 <script src="../app/paradeslogar.js"></script>
-
 </body>
 </html>

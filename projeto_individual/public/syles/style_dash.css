@@ -1,0 +1,105 @@
+:root {
+    --cor-fundo-geral: rgba(206, 205, 205, 0.704);
+    --cor-primaria: #1a0f08;
+    --cor-secundaria: #4d3e37;
+    --cor-destaque: #c9933f;
+    --cor-texto-claro: #faf4d3;
+    --cor-preto: #000;
+    --cor-instrumentos: #413229;
+}
+
+h1{
+    display: inline;
+    margin-bottom: 20px;
+}
+
+#conteiner_conteudo{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    padding-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.conteiner_kpis{
+    display: flex;
+    flex-direction: row;
+    height: 17vh;
+    width: 85%;
+    justify-content: space-between;
+    background-color: var(--cor-secundaria);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.kpi{
+    height: 100%;
+    width: 20%;
+    background-color: var(--cor-destaque);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.conteiner_info{
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    background-color: var(--cor-primaria);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 33px;
+}
+
+.informações_instrumento{
+    height: auto;
+    min-height: 420px;
+    width: 100%;
+    padding: 10px;
+    background-color: #bd9d6a;
+    border: 3px solid var(--cor-destaque);
+    border-radius: 15px;
+}
+
+
+#violino{display: none;}
+#viola{display: none;}
+#violoncelo{display: none;}
+
+
+.informacoes{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.info_toria,.info_instrumento{
+    height: 150px;
+    width: 40%;
+    color: var(--cor-texto-claro);
+    background-color: var(--cor-instrumentos);
+    padding: 15px;
+    border-radius: 15px;
+    border: 3px solid var(--cor-destaque);
+
+}
+
+.grafico {
+    width: 99%;
+    height: 260px;
+}
+
+.grafico canvas {
+    width: 100%;
+    height: 100%;
+}
+
+

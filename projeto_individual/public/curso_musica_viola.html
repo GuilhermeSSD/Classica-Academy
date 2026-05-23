@@ -9,24 +9,110 @@
 <body>
 
 <header>
-<div class="nomesite">
-    <h2>Clássica Academy</h2>
-</div>
-<div class="nav">
-    <button><a href="cursos_disponiveis.html">Cursos Disponiveis</a></button>
-    <button><a href="#">Dashbord</a></button>
-    <button onclick="sair()">Sair</button>
-</div>
+    <div class="nomesite">
+        <h2>Clássica Academy - Viola</h2>
+    </div>
+
+    <div class="nav">
+        <button><a href="cursos_disponiveis.html">Cursos Disponíveis</a></button>
+        <button><a href="#">Teoria musical</a></button>
+        <button onclick="irCursoInstrmunto()"><a href="#">Teoria instrumental</a></button>
+        <button onclick="irLicoes()"><a href="#">Lições</a></button>
+        <button><a href="dashboard.html">Dashboard</a></button>
+        <button onclick="sair()">Sair</button>
+    </div>
 </header>
 
+<main class="conteudo_curso" >
 
-<main class="curso">
-    
+    <section id="escrita">
+
+        <section id="pagina">
+            <h2 id="titulo_pagina">Figuras Musicais - 1</h2>
+
+            <p id="texto_curso">
+                A duração do som, a duração do silêncio e o ritmo musical são escritos com figuras musicais.
+                <br>
+                <strong>Nota musical</strong> é a figura que representa o som.
+                <br>
+                <strong>Pausa musical</strong> é a figura que representa o silêncio.
+            </p>
+
+            <div id="div_imagem"></div>
+
+            <p id="texto2_curso">
+                As figuras mais comuns são: semibreve, mínima, semínima, colcheia e semicolcheia.
+                Cada uma possui um valor de duração específico.
+            </p>
+
+            <div id="passador">
+                <button id="voltar" onclick="mudar(2)">&lt;</button>
+                <button id="avancar" onclick="mudar(1)">&gt;</button>
+                <button id="terminar" onclick="finalizarCurso()" >Finalizar curso - parte teórica</button>
+            </div>
+        </section>
+    </section>
+
+    <section id="quiz">
+        <section id="pagina">
+    <div id="infoQuestao" class="padding-8">
+                <span>Questão atual: <span id="spanNumeroDaQuestaoAtual"></span> de <span id="qtdQuestoes"></span>
+                    questões.</span>
+            </div>
+
+            <div id="perguntaDaQuestaoAtual" class="padding-8">
+                <span id="spanQuestaoExibida" class="text-bold"></span>
+            </div>
+
+            
+            <div id="infoAlternativas" class="padding-8">
+                <span><em>Escolha uma opção dentre as abaixo:</em></span>
+            </div>
+
+            <div id="opcoes" class="flex-colunar padding-8">
+                <span>
+                    <input type="radio" id="primeiraOpcao" name="option" class="radio" value="alternativaA" />
+                    <label for="primeiraOpcao" class="option" id="labelOpcaoUm"></label>
+                </span>
+                <span>
+                    <input type="radio" id="segundaOpcao" name="option" class="radio" value="alternativaB" />
+                    <label for="segundaOpcao" class="option" id="labelOpcaoDois"></label>
+                </span>
+                <span>
+                    <input type="radio" id="terceiraOpcao" name="option" class="radio" value="alternativaC" />
+                    <label for="terceiraOpcao" class="option" id="labelOpcaoTres"></label>
+                </span>
+                <span>
+                    <input type="radio" id="quartaOpcao" name="option" class="radio" value="alternativaD" />
+                    <label for="quartaOpcao" class="option" id="labelOpcaoQuatro"></label>
+                </span>
+            </div>
+
+
+            <div id="botoes" class="flex-colunar padding-8">
+                <button onclick="submeter()" id="btnSubmeter">Submeter resposta</button>
+                <button onclick="avancar()" id="btnProx" disabled>Avançar para próxima questão</button>
+                <button onclick="mostrarResultados()" id="btnVerResultado" disabled>ver resultados</button>
+            </div>
+        </section>
+    </section>
+
+
+<section id="resultados">
+    <section id="pagina">
+                <h2>Veja os seus resultados</h2>
+                <h3 id="textoParaMensagemFinal"></h3><br>
+                <h3 id="pontuacaoFinal"></h3><br>
+                <h3 id="acertos"></h3><br>
+                <h3 id="erros"></h3><br><br>
+                <h4 id="mensagemSucesso"></h4>
+                
+            </section>
+        </section>
+
 </main>
 
-<footer class="rodape">
-    <p>Clássica Academy — Mini Curso de Viola</p>
-</footer>
-
+<script src="../app/dentro_cursos/curso_teoria_viola.js"></script>
+<script src="../app/paradeslogar.js"></script>
 </body>
 </html>

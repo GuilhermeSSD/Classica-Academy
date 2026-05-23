@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Dashboard do Usuário</title>
+<link rel="stylesheet" href="syles/style_dash.css">
+<link rel="stylesheet" href="syles/header.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<body>
+<header>
+    <div class="nomesite">
+        <h2>Clássica Academy</h2>
+    </div>
+    <div class="nav">
+        <button><a href="cursos_disponiveis.html">Cursos Disponíveis</a></button>
+        <button><a href="#">Dashboard</a></button>
+        <button onclick="sair()">Sair</button>
+    </div>
+</header>
+
+    
+
+<section id="conteiner_conteudo">
+    
+    <h1 id="bem_vindo"></h1>
+    
+    <div class="conteiner_kpis">
+        <div class="kpi">
+            <p class="texto_kpi">Total de Instrumentos</p>
+        </div>
+        <div class="kpi">
+            <p class="texto_kpi">Total de Cursos</p>
+        </div>
+        <div class="kpi">
+            <p class="texto_kpi">Média Geral</p>
+        </div>
+        <div class="kpi">
+            <p class="texto_kpi">Total de Acertos</p>
+        </div>
+    </div>
+
+</section>
+
+<section class="conteiner_info">
+
+    <div class="informações_instrumento" id="violino">
+        <div class="informacoes">
+            <div class="info_toria">
+            <h4>Acertos:</h4>            
+            <h4>Erros:</h4>
+            <h4>Aproveitamento</h4>
+            </div>
+
+            <div class="info_instrumento">
+            <h4>Acertos:</h4>            
+            <h4>Erros:</h4>
+            <h4>Aproveitamento</h4>
+            </div>
+        </div>
+        <div class="grafico">
+            <canvas id="grafico_violino"></canvas>
+        </div>
+            
+    </div>
+
+
+    <div class="informações_instrumento" id="viola">
+        <div class="informacoes">
+            <div class="info_toria">
+            <h4>Acertos:</h4>            
+            <h4>Erros:</h4>
+            <h4>Aproveitamento</h4>
+            </div>
+
+            <div class="info_instrumento">
+            <h4>Acertos:</h4>            
+            <h4>Erros:</h4>
+            <h4>Aproveitamento</h4>
+            </div>
+        </div>
+        <div class="grafico">
+            <canvas id="grafico_viola"></canvas>
+        </div>
+        
+    </div>
+
+
+    <div class="informações_instrumento" id="violoncelo">
+        <div class="informacoes">
+            <div class="info_toria">
+            <h4>Acertos:</h4>            
+            <h4>Erros:</h4>
+            <h4>Aproveitamento</h4>
+            </div>
+
+            <div class="info_instrumento">
+            <h4>Acertos:</h4>            
+            <h4>Erros:</h4>
+            <h4>Aproveitamento</h4>
+            </div>
+        </div>
+        <div class="grafico">
+            <canvas id="grafico_violoncelo"></canvas>
+        </div>
+            
+    </div>
+
+
+</section>
+
+
+
+
+<script src="../app/dash.js"></script>
+<script src="../app/paradeslogar.js"></script>
+</body>
+</html>
