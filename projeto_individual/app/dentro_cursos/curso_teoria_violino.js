@@ -1,5 +1,4 @@
-// Vetor para armazenar as paginas de teoria
-let paginasTeoriaViolino = [
+const paginasTeoriaViolino = [
 {
     pagina: 1,
     titulo: "Figuras Musicais",
@@ -76,17 +75,16 @@ let paginasTeoriaViolino = [
     texto1: "O metrônomo é uma ferramenta usada para manter um tempo constante durante o estudo musical.",
     imagem: "https://blog.fritzdobbert.com.br/wp-content/uploads/2016/12/Metronomo.jpg",
     texto2: "Praticar com metrônomo ajuda a desenvolver precisão rítmica e controle do tempo.(dica\; no gogle tem um metrono digital gratis para auxiliar nos estudos musicais)"
-},
+}
 ]
 
 let index = 0; 
-let tituloPagina = document.getElementById("titulo_pagina");
-let textoCurso = document.getElementById("texto_curso");
-let imagem = document.getElementById("div_imagem");
-let texto2Curso = document.getElementById("texto2_curso");
-let btn_finalizar = document.getElementById("terminar")
+const tituloPagina = document.getElementById("titulo_pagina");
+const textoCurso = document.getElementById("texto_curso");
+const imagem = document.getElementById("div_imagem");
+const texto2Curso = document.getElementById("texto2_curso");
+const btn_finalizar = document.getElementById("terminar")
 
-//função que exibe os conteudos na pagina baseada no index
 function paginacao(listaDesejada) {
     tituloPagina.innerHTML = `${listaDesejada[index].titulo} - 
     ${listaDesejada[index].pagina} `;
@@ -102,7 +100,6 @@ function paginacao(listaDesejada) {
 
 }
 
-//função que é responsavel por avançar a lista para o proximo item e quando chega no maximo da lista ele volta para o primeiro
 function mudar(marca){
     if(marca == 1){
         index ++;
@@ -120,7 +117,6 @@ function mudar(marca){
 }   
 
 
-//baseado no curso que ele está redireciona para a pagina certa dele
 function irCursoInstrmunto(){
     let acessado = sessionStorage.getItem("cursoAcessado");
     if (acessado == "violino") {
@@ -132,7 +128,6 @@ function irCursoInstrmunto(){
     }
 }
 
-//ir para a lição de cada instrumento
 function irLicoes(){
     let acessado = sessionStorage.getItem("cursoAcessado");
     if (acessado == "violino") {
@@ -225,12 +220,12 @@ function irLicoes(){
 ]
 
     
+const quantidadeDeQuestoes = listaDeQuestoes.length
 let numeroDaQuestaoAtual = 0
 let pontuacaoFinal = 0
 let tentativaIncorreta = 0
 let certas = 0
 let erradas = 0
-let quantidadeDeQuestoes = listaDeQuestoes.length
 let percentual = 0
 
 function finalizarCurso(){
@@ -340,15 +335,15 @@ function mostrarResultados(){
     percentual = (certas/quantidadeDeQuestoes)*100;
     let mensagem = ""
     if(percentual <= 10){
-        mensagem = "Vc ainda não domina teoria musical"
+        mensagem = "Você ainda não domina teoria musical"
     }else if(percentual <= 25){
-        mensagem = "vc tem dominio basico de teoria mmusical"
+        mensagem = "Você tem dominio basico de teoria mmusical"
     }else if(percentual <= 50){
-        mensagem = "vc ja tem dominio suficiente para começar o instrumento"
+        mensagem = "Você ja tem dominio suficiente para começar o instrumento"
     }else if(percentual <= 75){
-        mensagem = "vc tem um bom conhecimento em teoria musical :)"
+        mensagem = "Você tem um bom conhecimento em teoria musical :)"
     }else if(percentual <= 100){
-        mensagem = "vc ja tem um exelente dominio em teoria musical, agora se concentra no instrumento"
+        mensagem = "Você ja tem um exelente dominio em teoria musical, agora se concentra no instrumento"
     }
 
     document.getElementById("pontuacaoFinal").innerHTML  = `Seu percentual de acertos foi:${percentual}%`;
@@ -356,8 +351,6 @@ function mostrarResultados(){
     document.getElementById("acertos").innerHTML = `Você acertou ${certas} questões`;
     document.getElementById("erros").innerHTML = `Você errou ${erradas} questões`;
     salvarResultadoQuiz();
-
-
 }
 
 
@@ -392,9 +385,7 @@ function salvarResultadoQuiz() {
     .then(resposta => {
         if (resposta.ok) {
             console.log("Resultado do quiz salvo com sucesso");
-        } else {
-            console.log("Erro ao salvar resultado");
-        }
+        } 
     })
     .catch(erro => {
         console.error("Erro no fetch:", erro);

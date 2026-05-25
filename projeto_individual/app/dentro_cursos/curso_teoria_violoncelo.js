@@ -1,5 +1,4 @@
-
-let paginasTeoriaVioloncelo = [
+const paginasTeoriaVioloncelo = [
 {
     pagina: 1,
     titulo: "Figuras Musicais",
@@ -9,91 +8,81 @@ let paginasTeoriaVioloncelo = [
 },
 {
     pagina: 2,
-    titulo: "Notas Musicais",
-    texto1: "A nota musical é o símbolo gráfico que representa um som. Ela indica tanto a altura quanto a duração do som.",
-    imagem: "https://upload.wikimedia.org/wikipedia/commons/6/6c/Music-notes.svg",
+    titulo: "Clave de Fá",
+    texto1: "O instrumenoto violoncelo utiliza clave de Fá que tem sua escala a seguinte:",
+    imagem: "https://i.pinimg.com/736x/20/d1/f0/20d1f0fed03f751d8febad6d84581b32.jpg",
     texto2: "No instrumento, a nota ganha vida quando a figura musical é executada respeitando seu valor rítmico."
 },
 {
     pagina: 3,
     titulo: "Pausas Musicais",
-    texto1: "Assim como o som tem duração, o silêncio também é parte essencial da música. As pausas representam o tempo em que nenhum som é produzido.",
-    imagem: "https://upload.wikimedia.org/wikipedia/commons/5/5e/Musical_rests.svg",
-    texto2: "Cada pausa corresponde exatamente ao valor de uma figura musical, mantendo o equilíbrio do ritmo."
+    texto1: "Cada Figura muisacal tem a sua respectiva pausa, que segue suas propriedas e valor.",
+    imagem: "https://diulylovatto.com/blog/wp-content/uploads/2025/03/2.png",
+    texto2: "Ou seja se a seminima vale um tempo em uma musica 4/4 a sua respectiva pausa tambem tem um tempo em um compaso 4/4."
 },
 {
     pagina: 4,
-    titulo: "Ritmo Musical",
-    texto1: "O ritmo é a organização do tempo na música. Ele surge da combinação entre notas e pausas ao longo da execução.",
-    imagem: "https://upload.wikimedia.org/wikipedia/commons/2/2e/Rhythm_example.png",
-    texto2: "Manter o ritmo correto é fundamental para tocar junto com outros músicos ou acompanhar um metrônomo."
+    titulo: "Compaso",
+    texto1: "É a divisão de um trecho musical em séries regulares de tempos.",
+    imagem: "https://i.ytimg.com/vi/1IZZzkem__Q/maxresdefault.jpg",
+    texto2: "Existe o compaso quaternario que divide as notas a cada 4, o ternário que divide as notas a cada 3 e o binario que divide as notas a cada 2."
 },
 {
     pagina: 5,
-    titulo: "Aplicação Prática",
-    texto1: "Ao estudar figuras musicais, é importante praticar lentamente, contando o tempo de cada nota e pausa.",
-    imagem: "https://upload.wikimedia.org/wikipedia/commons/1/1a/Metronome.jpg",
-    texto2: "Essa prática ajuda a desenvolver precisão rítmica e segurança na execução musical."
+    titulo: "Formula de compaso",
+    texto1: "A fórmula de compasso define a quantidade de tempos dentro de um compasso, bem como a figura musical que representa cada tempo,pulso ou movimento.",
+    imagem: "https://i.ytimg.com/vi/eNZipDuG3mU/maxresdefault.jpg",
+    texto2: "A quantidade de tempos ou pulsos é representada pelo número superior e a figura musical que equivale a um tempo ou pulso é representado pelo numero inferior."
 },
 {
     pagina: 6,
-    titulo: "Valores das Figuras Musicais",
-    texto1: "Cada figura musical possui um valor de duração específico. Esses valores são sempre proporcionais entre si.",
-    imagem: "https://upload.wikimedia.org/wikipedia/commons/8/8c/Note_durations.svg",
-    texto2: "Por exemplo, uma mínima dura o dobro de uma semínima, enquanto duas colcheias ocupam o mesmo tempo de uma semínima."
+    titulo: "Tipos de leitura",
+    texto1: "Leitura rítimica: Falar a sílaba 'TA', executando no ritimo das figuras;\n Leitura métrica: Falar o nome da nota, mas sem cantar, e executando no ritimo das figuras;\n Sofejo: Cantar as notas na altura correspondente dentro do padrao rítimico da musica.",
+    imagem: "https://i.ytimg.com/vi/r7YJ-b-UIYw/sddefault.jpg?v=6986088a",
+    texto2: ""
 },
 {
     pagina: 7,
-    titulo: "Relação entre Notas e Pausas",
-    texto1: "Para cada figura musical existe uma pausa correspondente com o mesmo valor de tempo.",
-    imagem: "https://upload.wikimedia.org/wikipedia/commons/9/9e/Music_rests_and_notes.png",
-    texto2: "Essa relação garante que o ritmo continue correto mesmo quando há silêncio na música."
+    titulo: "Movimento de condução",
+    texto1: "São gestos visuais usados para representar a pulsasão do compasso, cada compasso tem o seu respectivo movimento.",
+    imagem: "https://msaccb.com.br/templates/img/solfejo-em-4.png",
+    texto2: "O mivimento apresentado da figura é o movimento 4/4 existem muitos outros e recomendo da uma pesquisada no restante."
 },
 {
     pagina: 8,
-    titulo: "Contagem Musical",
-    texto1: "A contagem musical ajuda o músico a manter o tempo correto durante a execução.",
-    imagem: "https://upload.wikimedia.org/wikipedia/commons/3/3f/Music_counting_example.png",
-    texto2: "É comum contar mentalmente usando números, como: 1, 2, 3, 4, respeitando o valor de cada figura."
+    titulo: "Ligadura",
+    texto1: "A ligadura é uma linha curva que se coloca acima ou abaixo de dias ou mais notas e indica que o som deve se estender de uma nota para a outra.",
+    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEwD8H6XuIO21AfHdYQ0VqPp9PJQOupRtniw&s",
+    texto2: "Falando de uma forma mais clara, ela basicamente junta duas ou mais notas e as tornam com uma."
 },
 {
     pagina: 9,
-    titulo: "Compassos",
-    texto1: "O compasso organiza a música em grupos regulares de tempos, facilitando a leitura e execução.",
-    imagem: "https://upload.wikimedia.org/wikipedia/commons/4/4c/Music_time_signatures.svg",
-    texto2: "A fórmula de compasso indica quantos tempos existem em cada compasso e qual figura representa um tempo."
+    titulo: "Escala mais famosa",
+    texto1: "A escala mais famosa do violoncelo é a escala de Sol Maior, por ser uma das primeiras escalas a serem ensinadas.",
+    imagem: "https://i.ytimg.com/vi/ITPpH8j0YwE/hqdefault.jpg",
+    texto2: "A escala completa consistem em basicamente em subir a escala até a nota maxima e desela até a nota minima da escala, isso repetidamente."
 },
 {
     pagina: 10,
-    titulo: "Pulso Musical",
-    texto1: "O pulso é a batida regular que sentimos na música, semelhante ao bater do coração.",
-    imagem: "https://upload.wikimedia.org/wikipedia/commons/7/75/Music_pulse_diagram.png",
-    texto2: "Mesmo quando não há som, o pulso continua sendo contado internamente pelo músico."
+    titulo: "Acidentes da musica",
+    texto1: "Na musica nós temos como acidentes basicos o bemol e o sustenido que respectivamente em diminuir e aumentar um semiton na nota cuja esta mais proxima",
+    imagem: "https://i.pinimg.com/474x/f5/f8/a1/f5f8a126834d9c8254460c5dab81e134.jpg",
+    texto2: "Existem outros acidentes como o esquadro que retira um acidente nativo,proem eles não serão abordados nesse curso."
 },
 {
     pagina: 11,
     titulo: "Uso do Metrônomo",
     texto1: "O metrônomo é uma ferramenta usada para manter um tempo constante durante o estudo musical.",
-    imagem: "https://upload.wikimedia.org/wikipedia/commons/1/1a/Metronome.jpg",
-    texto2: "Praticar com metrônomo ajuda a desenvolver precisão rítmica e controle do tempo."
-},
-{
-    pagina: 12,
-    titulo: "Leitura Rítmica",
-    texto1: "A leitura rítmica consiste em interpretar corretamente as figuras e pausas escritas na partitura.",
-    imagem: "https://upload.wikimedia.org/wikipedia/commons/6/6f/Rhythm_reading_example.png",
-    texto2: "Esse tipo de leitura pode ser treinado batendo palmas ou marcando o tempo antes de tocar o instrumento."
-}
-]
+    imagem: "https://blog.fritzdobbert.com.br/wp-content/uploads/2016/12/Metronomo.jpg",
+    texto2: "Praticar com metrônomo ajuda a desenvolver precisão rítmica e controle do tempo.(dica\; no gogle tem um metrono digital gratis para auxiliar nos estudos musicais)"
+}]
 
-let index = 0; //variavel que devine em qual index está acessando, ou seja em qual instrumento ele está
-
-//parte que captura onde cada elemento vai ficar no html
-let tituloPagina = document.getElementById("titulo_pagina");
-let textoCurso = document.getElementById("texto_curso");
-let imagem = document.getElementById("div_imagem");
-let texto2Curso = document.getElementById("texto2_curso");
-let btn_finalizar = document.getElementById("terminar")
+let index = 0; 
+const tituloPagina = document.getElementById("titulo_pagina");
+const textoCurso = document.getElementById("texto_curso");
+const imagem = document.getElementById("div_imagem");
+const texto2Curso = document.getElementById("texto2_curso");
+const btn_finalizar = document.getElementById("terminar")
 
 
 function paginacao(listaDesejada) {
@@ -103,7 +92,7 @@ function paginacao(listaDesejada) {
     texto2Curso.innerHTML = listaDesejada[index].texto2;
     imagem.style.backgroundImage = `url('${listaDesejada[index].imagem}'`;
     
-    if(listaDesejada[index].pagina == 12){
+    if(listaDesejada[index].pagina == listaDesejada.length){
         btn_finalizar.style.display = "block"
     }else{
         btn_finalizar.style.display = "none"
@@ -139,7 +128,6 @@ function irCursoInstrmunto(){
     }
 }
 
-//ir para a lição de cada instrumento
 function irLicoes(){
     let acessado = sessionStorage.getItem("cursoAcessado");
     if (acessado == "violino") {
@@ -151,44 +139,90 @@ function irLicoes(){
     }
 }
 
+
 /*Daqui para frente é o quiz */
     const listaDeQuestoes = [
-        {
-            pergunta: "Qual mês tem 30 dias?",
-            alternativaA: "Janeiro",
-            alternativaB: "Dezembro",
-            alternativaC: "Junho",
-            alternativaD: "Agosto",
-            alternativaCorreta: "alternativaC"
-        },
-
-        {
-            pergunta: "Quantas horas tem em um dia?",
-            alternativaA: "30 horas",
-            alternativaB: "38 horas",
-            alternativaC: "48 horas",
-            alternativaD: "24 horas",
-            alternativaCorreta: "alternativaD"
-        },
-
-        {
-            pergunta: "Qual destes números é ímpar?",
-            alternativaA: "Dez",
-            alternativaB: "Doze",
-            alternativaC: "Oito",
-            alternativaD: "Onze",
-            alternativaCorreta: "alternativaD"
-        }
+    {
+        pergunta: "O que representa a duração do som na música?",
+        alternativaA: "O compasso",
+        alternativaB: "As figuras musicais",
+        alternativaC: "A escala",
+        alternativaD: "A clave",
+        alternativaCorreta: "alternativaB"
+    },
+    {
+        pergunta: "Qual clave é utilizada no seu instrumento?",
+        alternativaA: "Clave de Sol",
+        alternativaB: "Clave de Dó",
+        alternativaC: "Clave de Fá",
+        alternativaD: "Clave de Bemol",
+        alternativaCorreta: "alternativaC"
+    },
+    {
+        pergunta: "Para que servem as pausas musicais?",
+        alternativaA: "Para aumentar o volume",
+        alternativaB: "Para indicar a ausência de som por um tempo",
+        alternativaC: "Para mudar a clave",
+        alternativaD: "Para acelerar a música",
+        alternativaCorreta: "alternativaB"
+    },
+    {
+        pergunta: "O que é um compasso na música?",
+        alternativaA: "Uma nota longa",
+        alternativaB: "Um tipo de pausa",
+        alternativaC: "A divisão da música em tempos regulares",
+        alternativaD: "Um acidente musical",
+        alternativaCorreta: "alternativaC"
+    },
+    {
+        pergunta: "Qual compasso divide as notas em grupos de 4 tempos?",
+        alternativaA: "Binário",
+        alternativaB: "Ternário",
+        alternativaC: "Quaternário",
+        alternativaD: "Simples",
+        alternativaCorreta: "alternativaC"
+    },
+    {
+        pergunta: "Na fórmula de compasso, o número superior indica:",
+        alternativaA: "A figura musical do tempo",
+        alternativaB: "A quantidade de tempos no compasso",
+        alternativaC: "A clave utilizada",
+        alternativaD: "O andamento da música",
+        alternativaCorreta: "alternativaB"
+    },
+    {
+        pergunta: "O que é solfejo?",
+        alternativaA: "Falar o nome das notas sem cantar",
+        alternativaB: "Cantar as notas respeitando altura e ritmo",
+        alternativaC: "Marcar apenas o pulso",
+        alternativaD: "Executar pausas",
+        alternativaCorreta: "alternativaB"
+    },
+    {
+        pergunta: "Qual é a escala mais famosa do violoncelo citada no curso?",
+        alternativaA: "Escala de Dó Maior",
+        alternativaB: "Escala de Ré Maior",
+        alternativaC: "Escala de Sol Maior",
+        alternativaD: "Escala de Lá Maior",
+        alternativaCorreta: "alternativaC"
+    },
+    {
+        pergunta: "Qual a nota da primeira linha da clave do seu instrumento",
+        alternativaA: "Nota Dó",
+        alternativaB: "Nota Fá",
+        alternativaC: "Nota Mi",
+        alternativaD: "Nota Sol",
+        alternativaCorreta: "alternativaD"
+    }
     ]
 
 
-// variáveis globais    
+const quantidadeDeQuestoes = listaDeQuestoes.length
 let numeroDaQuestaoAtual = 0
 let pontuacaoFinal = 0
 let tentativaIncorreta = 0
 let certas = 0
 let erradas = 0
-let quantidadeDeQuestoes = listaDeQuestoes.length
 let percentual = 0
 
 function finalizarCurso(){
@@ -300,15 +334,15 @@ function mostrarResultados(){
     percentual = (certas/quantidadeDeQuestoes)*100;
     let mensagem = ""
     if(percentual <= 10){
-        mensagem = "Vc ainda não domina teoria musical"
+        mensagem = "Você ainda não domina teoria musical"
     }else if(percentual <= 25){
-        mensagem = "vc tem dominio basico de teoria mmusical"
+        mensagem = "Você tem dominio basico de teoria mmusical"
     }else if(percentual <= 50){
-        mensagem = "vc ja tem dominio suficiente para começar o instrumento"
+        mensagem = "Você ja tem dominio suficiente para começar o instrumento"
     }else if(percentual <= 75){
-        mensagem = "vc tem um bom conhecimento em teoria musical :)"
+        mensagem = "Você tem um bom conhecimento em teoria musical :)"
     }else if(percentual <= 100){
-        mensagem = "vc ja tem um exelente dominio em teoria musical, agora se concentra no instrumento"
+        mensagem = "Você ja tem um exelente dominio em teoria musical, agora se concentra no instrumento"
     }
 
     document.getElementById("pontuacaoFinal").innerHTML  = `Seu percentual de acertos foi:${percentual}%`;
@@ -349,8 +383,6 @@ function salvarResultadoQuiz() {
     .then(resposta => {
         if (resposta.ok) {
             console.log("Resultado do quiz salvo com sucesso");
-        } else {
-            console.log("Erro ao salvar resultado");
         }
     })
     .catch(erro => {

@@ -48,7 +48,7 @@ function ircad(){
                     setTimeout(function () {
 
                         window.location = "/cursos_disponiveis.html";
-                    }, 1000); // apenas para exibir o loading
+                    }, 1000); 
 
                 });
 
@@ -76,6 +76,5 @@ function ircad(){
     function sumirMensagem() {
         cardErro.style.display = "none"
     }
-
 
     function finalizarAguardar(){}

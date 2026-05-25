@@ -8,7 +8,6 @@ let listainstrumentoCadastradas = [];
     let senhaVar = imp_senha.value;
     let confirmacaoSenhaVar = imp_senhaconfirm.value;
 
-    //Verifica se todos os campos estão em brancos
     if (
     nomeVar == "" ||
     emailVar == "" ||
@@ -23,7 +22,6 @@ let listainstrumentoCadastradas = [];
     finalizarAguardar();
     return false;
 
-      //Verificando se o nome é maior ou igual a um caractere
     } else if (nomeVar.length <= 1) {
     cardErro.style.display = "block";
     cardErro.style.background = "linear-gradient(135deg, #dc2626, #b91c1c)";
@@ -31,7 +29,6 @@ let listainstrumentoCadastradas = [];
     finalizarAguardar();
     return false;
 
-      //Verificando se há algum @ no email
     } else if (emailVar.indexOf('@') == -1) {
     cardErro.style.display = "block";
     cardErro.style.background = "linear-gradient(135deg, #dc2626, #b91c1c)";
@@ -39,7 +36,6 @@ let listainstrumentoCadastradas = [];
     finalizarAguardar();
     return false;
 
-      //Verificando se há algum . no email
     } else if (emailVar.indexOf('.') == -1) {
     cardErro.style.display = "block";
     cardErro.style.background = "linear-gradient(135deg, #dc2626, #b91c1c)";
@@ -47,7 +43,6 @@ let listainstrumentoCadastradas = [];
     finalizarAguardar();
     return false;
 
-      //Verificando se a senha é maior ou igual a 6 caracteres 
     } else if (senhaVar.length <= 6) {
     cardErro.style.display = "block";
     cardErro.style.background = "linear-gradient(135deg, #dc2626, #b91c1c)";
@@ -55,7 +50,6 @@ let listainstrumentoCadastradas = [];
     finalizarAguardar();
     return false;
 
-      //Verificando se a senha e a confirmacão são iguais
     } else if (senhaVar != confirmacaoSenhaVar) {
     cardErro.style.display = "block";
     cardErro.style.background = "linear-gradient(135deg, #dc2626, #b91c1c)";
@@ -87,11 +81,7 @@ let listainstrumentoCadastradas = [];
     let violino = document.getElementById("inp_violino");
     let viola = document.getElementById("inp_Viola");
     let violoncelo = document.getElementById("inp_Violoncelo");
-    // aguardar();
-    //Recupere o valor da nova input pelo nome do id
-    // Agora vá para o método fetch logo abaixo
 
-    // verifica quais instrumentos foi marcado pelo usuario
     if (violino.checked) {
     listaInstrumentosMarcadas.push("1");
 } 
@@ -110,15 +100,12 @@ let listainstrumentoCadastradas = [];
 
     
     
-    // Enviando o valor da nova input
     fetch("/usuarios/cadastrar", {
     method: "POST",
     headers: {
         "Content-Type": "application/json",
 },
     body: JSON.stringify({
-        // crie um atributo que recebe o valor recuperado aqui
-        // Agora vá para o arquivo routes/usuario.js
         nomeServer: nomeVar,
         emailServer: emailVar,
         senhaServer: senhaVar,
@@ -129,15 +116,11 @@ let listainstrumentoCadastradas = [];
     .then(function (resposta) {
         console.log("resposta: ", resposta);
 
-        // exibir a parte 2 do formulário
-        // ao cadastrar a conta, já seleciona os instrumentos e usa o ID cadastrado na conta, para vincular TODOS os instrumentos
-
         if (resposta.ok) {
         sessionStorage.removeItem("userTemp");
         sessionStorage.removeItem("emailTemp");
         sessionStorage.removeItem("senhaTemp");
 
-        //modal basico que informa que deu certo
         cardErro.style.display = "block";
         cardErro.style.background = "linear-gradient(135deg, #26dc35, #538f09)";
         mensagem_erro.innerHTML =
@@ -161,7 +144,6 @@ let listainstrumentoCadastradas = [];
     return false;
 }
 
-  // Listando instrumentos cadastradas 
     function listar() {
         fetch("/instrumento/listar", {
         method: "GET",
@@ -183,7 +165,6 @@ let listainstrumentoCadastradas = [];
     });
 }
 
-  //função para remover os modais
     function sumirMensagem() {
     cardErro.style.display = "none";
 }

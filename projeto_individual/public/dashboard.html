@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="syles/header.css">
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-<body>
+<body onload="carregarDashboard()">
 <header>
     <div class="nomesite">
         <h2>Clássica Academy</h2>
@@ -19,7 +19,6 @@
     </div>
 </header>
 
-    
 
 <section id="conteiner_conteudo">
     
@@ -27,10 +26,7 @@
     
     <div class="conteiner_kpis">
         <div class="kpi">
-            <p class="texto_kpi">Total de Instrumentos</p>
-        </div>
-        <div class="kpi">
-            <p class="texto_kpi">Total de Cursos</p>
+            <p class="texto_kpi" id="acessados">Total de Instrumentos</p>
         </div>
         <div class="kpi">
             <p class="texto_kpi">Média Geral</p>
