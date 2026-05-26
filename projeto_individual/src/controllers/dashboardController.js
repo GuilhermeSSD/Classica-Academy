@@ -18,6 +18,24 @@ function buscarMaioresNotas(req, res) {
 }
 
 
+function buscarKpis(req,res){
+    var idUsuario = req.params.idUsuario;
+
+    if (idUsuario == undefined) {
+        res.status(400).send("idUsuario undefined");
+    } else {
+        dashboardModel.buscarKpis(idUsuario)
+            .then(function (resultado) {
+                res.json(resultado);
+            })
+            .catch(function (erro) {
+                console.log(erro);
+                res.status(500).json(erro.sqlMessage);
+            });
+    }
+}
+
 module.exports = {
-    buscarMaioresNotas
+    buscarMaioresNotas,
+    buscarKpis
 };
