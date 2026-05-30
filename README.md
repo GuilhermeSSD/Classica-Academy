@@ -21,7 +21,6 @@ Oferecer um ambiente digital que facilite o aprendizado musical, permitindo que 
 - Acesso a cursos de diferentes instrumentos  
 - Separação dos cursos em parte teórica e prática  
 - Realização de quizes para avaliação do aprendizado  
-- Armazenamento do histórico de respostas e notas  
 - Dashboard com gráficos de desempenho por instrumento  
 
 ## Funcionamento do Sistema
