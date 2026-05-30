@@ -59,7 +59,7 @@ h1{
 
 .informações_instrumento{
     height: auto;
-    min-height: 420px;
+    min-height: 150px;
     width: 100%;
     padding: 10px;
     background-color: #bd9d6a;
@@ -103,3 +103,6 @@ h1{
 }
 
 
+.texto_kpi {
+    text-align: center;
+}

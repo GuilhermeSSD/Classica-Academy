@@ -86,16 +86,7 @@ function mudar(marca){
 }   
 
 
-function irCursoInstrmunto(){
-    let acessado = sessionStorage.getItem("cursoAcessado");
-    if (acessado == "violino") {
-        window.location = "/curso_intrumento_violino.html"
-    } else if(acessado == "viola"){
-        window.location = "/curso_intrumento_viola.html"
-    }else if(acessado == "violoncelo"){
-        window.location = "/curso_intrumento_violoncelo.html"
-    }
-}
+
 
 
 /*Daqui para frente é o quiz */

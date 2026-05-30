@@ -114,11 +114,9 @@ function buscarKpis(){
             var quizzesRespondidos = json[0].quizzesRespondidos;
             var mediaAproveitamento = Math.round(json[0].mediaAproveitamento);
 
-
             exibirMelhorInstrumento += melhorInstrumento
             exibirQuizzesRespondidos += quizzesRespondidos
             exibirmediaAproveitamento += mediaAproveitamento
-
 
             console.log(mediaAproveitamento)
             p_acessados.innerHTML = exibirAcessos

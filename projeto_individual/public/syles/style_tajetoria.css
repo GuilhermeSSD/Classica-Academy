@@ -91,9 +91,11 @@
 }
 
 #eu{
-    width: 40%;
+    width: 60%;
     background-color: rgb(14, 3, 69);
     border-radius: 10px;
+    background-image: url(../img/eu_pequeno.jpg);
+    background-size: cover;
 }
 
 .plural_cards{

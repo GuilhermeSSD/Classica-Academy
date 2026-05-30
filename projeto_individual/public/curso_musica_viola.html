@@ -2,9 +2,9 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Mini Curso de Viola | Clássica Academy</title>
+    <title>Curso teoria Viola | Clássica Academy</title>
     <link rel="stylesheet" href="syles/header.css">
-    <link rel="stylesheet" href="syles/curso-violino.css">
+    <link rel="stylesheet" href="syles/cursos.css">
 </head>
 <body onload="paginacao(paginasTeoriaViola)">
 
@@ -14,11 +14,16 @@
     </div>
 
     <div class="nav">
-        <button><a href="cursos_disponiveis.html">Cursos Disponíveis</a></button>
-        <button><a href="#">Teoria musical</a></button>
-        <button onclick="irCursoInstrmunto()"><a href="#">Teoria instrumental</a></button>
-        <button onclick="irLicoes()"><a href="#">Lições</a></button>
-        <button><a href="dashboard.html">Dashboard</a></button>
+        <button onclick="navegacaoGlobal('cursosDisponiveis')">Cursos Disponíveis</a></button>
+
+        <button onclick="navegacaoGlobal('teoria')">Teoria musical</button>
+
+        <button onclick="navegacaoGlobal('pratica')">Teoria instrumental</button>
+
+        <button onclick="navegacaoGlobal('licoes')">Lições</button>
+
+        <button onclick="navegacaoGlobal('dashboard')">Dashboard</button>
+
         <button onclick="sair()">Sair</button>
     </div>
 </header>
@@ -47,7 +52,7 @@
     <section id="quiz">
         <section id="pagina">
     <div id="infoQuestao" class="padding-8">
-                <span>Questão atual: <span id="spanNumeroDaQuestaoAtual"></span> de <span id="qtdQuestoes"></span>
+                <span>Questão atual: <span id="spanNumeroDaQuestaoAtual"></span> de 9</span>
                     questões.</span>
             </div>
 
@@ -104,6 +109,6 @@
 </main>
 
 <script src="../app/dentro_cursos/curso_teoria_viola.js"></script>
-<script src="../app/paradeslogar.js"></script>
+<script src="../app/navegacao.js"></script>
 </body>
 </html>

@@ -8,6 +8,10 @@
 --cor-instrumentos: #413229;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .conteiner-fundo {
     background-color: rgb(37, 37, 37);
     height: 100vh;
@@ -56,18 +60,21 @@
 
 #comecar {
     background-color: var(--cor-destaque);
+    color: var(--cor-texto-claro);
     padding: 10px;
     border-radius: 10px;
     border: none;
     margin-top: 20px;
     height: 50px;
     width: 200px;
-    font-size: 0.8em;
+    font-size: 0.9em;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 #comecar:hover {
-    opacity: 0.9;
+    background-color: #684918;
+    transform: translateY(-2px);
 }
 
 /*------------------------------------------------------*/
