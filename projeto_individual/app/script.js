@@ -13,17 +13,17 @@ const instrumentos = [
 ,
     {
     nome: "Viola",
-    descricao: "viola é um intrumento com um timbre mais grave que o violino",
-    metodo: "SITT/MSA",
-    descricaoMetodo: "Metodo focado no aprendizado por meio de desafios",
+    descricao: "Conhecida por seu timbre aveludado e profundo, a viola ocupa um papel essencial na música clássica, trazendo riqueza harmônica e expressividade às composições há séculos. Mestres como Johann Sebastian Bach e Ludwig van Beethoven escreveram obras que exploram a elegância e a intensidade única desse instrumento.",
+    metodo: "Bratschenschule Berta Volmer Band I/MSA",
+    descricaoMetodo: "O Bratschenschule Band I, de Berta Volmer, é um método introdutório para viola que trabalha leitura musical, técnica básica e musicalidade de forma progressiva, sendo muito usado na formação inicial do instrumentista.",
     imagem: "img/viola.jpg",
     }
 , 
     {
     nome: "Violoncelo",
-    descricao: "Violoncelo é um intrumento responsavel por fazer o baixo de uma canção",
+    descricao: "Conhecido por seu som profundo e expressivo, o violoncelo é um dos instrumentos mais emocionais da música clássica. Seu timbre próximo à voz humana inspirou compositores como Johann Sebastian Bach e Ludwig van Beethoven, que criaram obras marcantes explorando toda a sua intensidade e elegância.",
     metodo: "Dotzauer/MSA",
-    descricaoMetodo: "Metodo focado no aprendizado por meio de coisas",
+    descricaoMetodo: "O Método Dotzauer, de Friedrich Dotzauer, é um método clássico de violoncelo com estudos progressivos focados em técnica, afinação e controle do arco.",
     imagem: "img/violoncelo.jpg",
     }
 ]

@@ -346,7 +346,7 @@ function mostrarResultados(){
         mensagem = "Você ja tem um exelente dominio em teoria musical, agora se concentra no instrumento"
     }
 
-    document.getElementById("pontuacaoFinal").innerHTML  = `Seu percentual de acertos foi:${percentual}%`;
+    document.getElementById("pontuacaoFinal").innerHTML  = `Seu percentual de acertos foi:${percentual.toFixed(2)}%`;
     document.getElementById("textoParaMensagemFinal").innerHTML = `${mensagem}`;
     document.getElementById("acertos").innerHTML = `Você acertou ${certas} questões`;
     document.getElementById("erros").innerHTML = `Você errou ${erradas} questões`;

@@ -289,7 +289,7 @@ function mostrarResultados(){
         mensagem = "Você ja tem um conhecimento alto sobre o seu instrumento e já pode ir para a oficialização"
     }
 
-    document.getElementById("pontuacaoFinal").innerHTML  = `Seu percentual de acertos foi:${percentual}%`;
+    document.getElementById("pontuacaoFinal").innerHTML  = `Seu percentual de acertos foi:${percentual.toFixed(2)}%`;
     document.getElementById("textoParaMensagemFinal").innerHTML = `${mensagem}`;
     document.getElementById("acertos").innerHTML = `Você acertou ${certas} questões`;
     document.getElementById("erros").innerHTML = `Você errou ${erradas} questões`;
