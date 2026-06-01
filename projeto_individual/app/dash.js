@@ -78,7 +78,6 @@ function atualizarGrafico(dados, instrumento, grafico) {
             if (dados[i].tipoCurso == "Teoria") {
                 teoria = dados[i].maiorNota;
             }
-
             if (dados[i].tipoCurso == "pratica") {
                 pratica = dados[i].maiorNota;
             }
@@ -91,8 +90,7 @@ function atualizarGrafico(dados, instrumento, grafico) {
 }
 function carregarDashboard() {
     var idUsuario = sessionStorage.getItem("ID_USUARIO");
-
-    fetch("/dashboard/maiores-notas/" + idUsuario)
+    fetch(`/dashboard/maiores-notas/${idUsuario}`)
         .then(function (resposta) {
             return resposta.json();
         })
@@ -107,7 +105,7 @@ function carregarDashboard() {
 
 function buscarKpis(){
     var idUsuario = sessionStorage.getItem("ID_USUARIO");
-    fetch("/dashboard/kpis/" + idUsuario)
+    fetch(`/dashboard/kpis/${idUsuario}`)
         .then(function(resposta){
             resposta.json().then(function (json) {
             var melhorInstrumento = json[0].melhorInstrumento;

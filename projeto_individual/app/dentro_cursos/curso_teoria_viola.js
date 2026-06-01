@@ -9,7 +9,7 @@ const paginasTeoriaViola = [
 {
     pagina: 2,
     titulo: "Clave de Dó",
-    texto1: "O instrumenoto violino utiliza clave de Dó que tem sua escala a seguinte:",
+    texto1: "O instrumento violino utiliza clave de Dó que tem sua escala a seguinte:",
     imagem: "https://musicaeadoracao.com.br/recursos/imagens/tecnicos/teoria/teoria_online/leitura_21a.gif",
     texto2: "No instrumento, a nota ganha vida quando a figura musical é executada respeitando seu valor rítmico."
 },
@@ -296,8 +296,6 @@ function checarResposta() {
     const questaoAtual = listaDeQuestoes[numeroDaQuestaoAtual] 
     const respostaQuestaoAtual = questaoAtual.alternativaCorreta 
     const options = document.getElementsByName("option"); 
-
-    // verifica se resposta assinalada é correta
     options.forEach((option) => {
         if (option.checked === true && option.value === respostaQuestaoAtual) {
             pontuacaoFinal++

@@ -9,7 +9,7 @@ const paginasTeoriaVioloncelo = [
 {
     pagina: 2,
     titulo: "Clave de Fá",
-    texto1: "O instrumenoto violoncelo utiliza clave de Fá que tem sua escala a seguinte:",
+    texto1: "O instrumento violoncelo utiliza clave de Fá que tem sua escala a seguinte:",
     imagem: "https://i.pinimg.com/736x/20/d1/f0/20d1f0fed03f751d8febad6d84581b32.jpg",
     texto2: "No instrumento, a nota ganha vida quando a figura musical é executada respeitando seu valor rítmico."
 },

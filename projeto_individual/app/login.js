@@ -15,7 +15,6 @@ function ircad(){
         else {
             setInterval(sumirMensagem, 5000)
         }
-
         console.log("FORM LOGIN: ", emailVar);
         console.log("FORM SENHA: ", senhaVar);
 
@@ -30,10 +29,8 @@ function ircad(){
             })
         }).then(function (resposta) {
             console.log("ESTOU NO THEN DO entrar()!")
-
             if (resposta.ok) {
                 console.log(resposta);
-
                 resposta.json().then(json => {
                     console.log(json);
                     console.log(JSON.stringify(json));
@@ -44,9 +41,7 @@ function ircad(){
                     cardErro.style.background = "linear-gradient(135deg, #00f519, #0b8c04)";
                     mensagem_erro.innerHTML =
                         "(carregando o curso disponiveis para o seu cadastro...)";
-
                     setTimeout(function () {
-
                         window.location = "/cursos_disponiveis.html";
                     }, 1000); 
 

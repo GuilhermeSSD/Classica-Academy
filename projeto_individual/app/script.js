@@ -1,7 +1,6 @@
 function comecar(){
     window.location.href = "/login.html";
 }
-//Lista de json que contem as informações dos cards de cada instrumento
 const instrumentos = [
     {
     nome: "Violino",
@@ -29,16 +28,13 @@ const instrumentos = [
 ]
 
 
-let index = 0; //variavel que devine em qual index está acessando, ou seja em qual instrumento ele está
 let pag = "login.html";
 
-//parte que captura onde cada elemento vai ficar no html
 let tituloNome = document.getElementById("titulo_instrumento");
 let descricaoInstrumento = document.getElementById("sobre_intrumento");
 let tituloMetodo = document.getElementById("nome_metodo");
 let descricaoMetodo = document.getElementById("descricao_metodo");
 
-//função que exibe os conteudos na pagina baseada no index
 function exibirInstrumento() {
     tituloNome.innerHTML = instrumentos[index].nome;
     descricaoInstrumento.innerHTML = instrumentos[index].descricao;
@@ -48,7 +44,6 @@ function exibirInstrumento() {
         "url(" + instrumentos[index].imagem + ")";
 }
 
-//função que é responsavel por avançar a lista para o proximo item e quando chega no maximo da lista ele volta para o primeiro
 function avancar(){
     index ++;
     if(index == instrumentos.length){
@@ -57,7 +52,6 @@ function avancar(){
 exibirInstrumento()
 }
 
-//função que é responsavel por VOLTAR a lista para o item anterior e quando chega no minimo da lista ele vai para o ultimo
 function voutar(){
     index --;
     if(index < 0){

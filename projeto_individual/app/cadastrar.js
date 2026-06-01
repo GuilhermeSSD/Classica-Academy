@@ -1,5 +1,3 @@
- // Array para armazenar instrumento cadastradas para validação de código de ativação 
-
 let listainstrumentoCadastradas = [];
 
     function salvarMetade(){

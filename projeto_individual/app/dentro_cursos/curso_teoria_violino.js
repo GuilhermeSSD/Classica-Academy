@@ -9,7 +9,7 @@ const paginasTeoriaViolino = [
 {
     pagina: 2,
     titulo: "Clave de sol",
-    texto1: "O instrumenoto violino utiliza a cave de sol que tem sua escala a seguinte:",
+    texto1: "O instrumento violino utiliza a cave de sol que tem sua escala a seguinte:",
     imagem: "https://i.pinimg.com/736x/e9/0d/44/e90d44964c503706b746f68fef077f64.jpg",
     texto2: "No instrumento, a nota ganha vida quando a figura musical é executada respeitando seu valor rítmico."
 },
