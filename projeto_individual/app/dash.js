@@ -17,7 +17,7 @@ if (sessionStorage.getItem("temAcesso").includes(3)){
     violoncelo.style.display = "block";
     exibirAcessos += `Violoncelo<br>`
 } 
-
+    
 const grafVio = document.getElementById('grafico_violino');
 const grafViola = document.getElementById('grafico_viola');
 const grafiCelo = document.getElementById('grafico_violoncelo');

@@ -27,7 +27,7 @@ const instrumentos = [
     }
 ]
 
-
+let index = 0
 let pag = "login.html";
 
 let tituloNome = document.getElementById("titulo_instrumento");
